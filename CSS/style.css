@@ -1,0 +1,537 @@
+/*全局样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.title_bg{
+    height: 45px;
+    line-height: 45px;
+    background: url("../images/title_bg.jpg") repeat;
+    padding-left: 10px;
+}
+.title_bg h2 a{
+    color: #454545;
+    text-decoration: none;
+    font-size: 16px;
+}
+img{
+    border: none;
+}
+
+
+/*头部样式*/
+#logo{
+    display: inline-block;
+}
+#sousuo{
+    display: inline-block;
+    float: right;
+    background-color: #F3F3F3;
+    border: solid 1px #ccc;
+
+    height: 35px;
+    width: 290px;
+    margin-top: 60px;
+}
+
+#sousuo input[type="text"] {
+    font-size: 24px;
+    padding-left: 10px;
+    width: 200px;
+    height: 31px;
+    display: inline-block;
+    vertical-align: top;
+}
+#sousuo input[type="submit"] {
+    font-size: 20px;
+    background-color: #3598db;
+    width: 76px;
+    height: 35px;
+    color: white;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+div#nav{
+    list-style: none;
+    background-color: #3598db;
+    height: 60px;
+}
+div#nav li{
+    display: inline-block;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0 20px;
+    border-right: solid 1px #2f89c5;
+    -moz-transition: background-color 0.5s linear;
+    -webkit-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+div#nav li.firstli , div#nav li:hover{
+    background-color: #2f89c5;
+}
+div#nav li.lastli{
+    border: none;
+}
+div#nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------- 内容主体的样式 （以下为）------------------ */
+div#body_wrapper{
+    margin-top: 20px;
+    width: 1000px;
+    height: 100%;
+
+}
+div article{
+    width: 628px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+div aside{
+    width: 352px;
+
+
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+
+}
+section#slide{
+    box-shadow: 1px 5px 15px #c2c2c2;
+
+    height: 278px;
+}
+
+
+
+/* ------------------- 轮播图的样式 （以下为）------------------ */
+div.wrap a{
+    color:#fff;
+}
+div#slide-holder {
+    width : 628px;
+    height : 278px;
+}
+div#slide-runner {
+    width : 628px;
+    height : 278px;
+    overflow : hidden;
+    position : absolute;
+}
+div#slide-holder img {
+    margin : 0;
+    display : none;
+    position : absolute;
+}
+div#slide-controls {
+    left : 0;
+    bottom : 0px;
+    width : 628px;
+    height : 46px;
+    display : none;
+    position : absolute;
+}
+div#slide-controls p.text {
+    float : left;
+    color : #fff;
+    display : inline;
+    font-size : 10px;
+    line-height : 16px;
+    margin : 15px 0 0 20px;
+    text-transform : uppercase;
+}
+p#slide-nav {
+    float : right;
+    height : 24px;
+    display : inline;
+    margin : 11px 15px 0 0;
+}
+p#slide-nav a{
+    float : left;
+    width : 24px;
+    height : 24px;
+    display : inline;
+    font-size : 11px;
+    margin : 0 5px 0 0;
+    line-height : 24px;
+    font-weight : bold;
+    text-align : center;
+    text-decoration : none;
+    background-position : 0 0;
+    background-repeat : no-repeat;
+}
+p#slide-nav a.on {
+    background-position : 0 -24px;
+}
+p#slide-nav a {
+    background-image : url(../images/slide-nav.png);
+}
+
+/* ------------------- 轮播图的样式 （以上为）------------------ */
+
+/*新闻部分*/
+section#index_newslist{
+    margin-top: 20px;
+}
+
+section#index_newslist li{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-top: 10px;
+}
+section#index_newslist li a{
+    display: inline-block;
+    vertical-align: top;
+    height: 165px;
+}
+
+section#index_newslist li a img{
+    width: 314px;
+    height: 165px;
+}
+
+section#index_newslist li a.miaoshu{
+    width: 314px;
+
+    display: inline-block;
+    background-color: #3598db;
+    color: #d7e9f3;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+}
+section#index_newslist li a.miaoshu h3{
+     border-bottom: solid 1px #d7e9f3;
+    overflow: hidden;
+     margin-bottom: 10px;
+     height: 27px;
+     width: 293px;
+     text-indent: 0;
+ }
+section#index_newslist a.miaoshu p{
+    height: 108px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 27px;
+}
+.sanjiaoxing{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #ff6600;
+    top: 19px;
+    left: -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*活动部分*/
+section#hdlist{
+    margin-top: 20px;
+}
+
+#hdlist_a{
+    display: inline-block;
+    height: 150px;
+    width: 628px;
+    margin-bottom: 10px;
+}
+#hdlist_a li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+#hdlist_a a{
+    display: inline-block;
+    text-decoration: none;
+}
+#hdlist_a a img{
+    width: 149.5px;
+    height: 144px;
+}
+#hdlist_a li:last-child{
+    padding-right: 0;
+}
+
+
+#hdlist_b{
+    width: 468.5px;
+    display: inline-block;
+    vertical-align: top;
+}
+#hdlist_c{
+    width: 149.5px;
+    display: inline-block;
+    vertical-align: top;
+}
+#hdlist_b li:before{
+    content: counter(biaohao, decimal);
+    padding: 2px 7px;
+    background-color: black;
+    margin-right: 5px;
+    color: white;
+}
+#hdlist_b li:nth-child(1):before,#hdlist_b li:nth-child(2):before,#hdlist_b li:nth-child(3):before{
+     background-color: #2f89c5;
+ }
+#hdlist_b li:last-child:before{
+    padding: 2px 2.5px;
+}
+#hdlist_b li{
+    counter-increment: biaohao;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-type: decimal;
+    margin-bottom: 16px;
+
+}
+#hdlist_b li:hover{
+
+    text-shadow: 1px 2px 4px #000;
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+#hdlist_b a{
+    text-decoration: none;
+    color: #717171;
+}
+
+#hdlist_c div{
+    margin-bottom: 5px;
+    padding-left: 6px;
+    width: 149.5px;
+}
+#hdlist_c div.tufirst{
+    width: 149.5px;
+    height: 205px;
+}
+#hdlist_c div.tusecond{
+    width: 149.5px;
+    height: 154px;
+}
+
+
+/*博文部分*/
+
+
+#tu_bowen li{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+#tu_bowen li img{
+    width: 172px;
+    height: 111px;
+}
+#tu_bowen li:first-child{
+    padding-right: 8px;
+}
+#tu_bowen li p{
+    width: 172px;
+    line-height: 33px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #717171;
+    text-indent: 3px;
+}
+#tu_bowen li a{
+    text-decoration: none;
+}
+#tu_bowen li p:hover{
+    text-shadow: 1px 2px 4px #000;
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+
+
+div#li_bowen{
+    margin:0 0 0 0;
+}
+#li_bowen li{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    counter-increment: libowen;
+    line-height: 18px;
+}
+#li_bowen li a{
+    text-decoration: none;
+    color: #717171;
+}
+#li_bowen li:before{
+    content: counter(libowen, decimal);
+    background-color: #2f89c5;
+    color: white;
+    padding: 2px 7px;
+    margin-right: 5px;
+}
+#li_bowen li:hover{
+    text-shadow: 1px 2px 4px #000;
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+
+/*招聘部分*/
+
+#zhaopin{
+    margin-top: 17px;
+}
+#li_zhaopin li{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    counter-increment: lizhaopin;
+    line-height: 18px;
+}
+#li_zhaopin li:before {
+    content: counter(lizhaopin, decimal);
+    background-color: #2f89c5;
+    color: white;
+    padding: 2px 7px;
+    margin-right: 5px;
+}
+#li_zhaopin li:last-child:before{
+    padding: 2px 3px;
+}
+#li_zhaopin li a {
+    text-decoration: none;
+    color: #717171;
+}
+#li_zhaopin li:hover{
+    text-shadow: 1px 2px 4px #000;
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+
+/*联系我们*/
+
+#lianxi{
+    margin-top: 14px;
+    display: inline-block;
+}
+#lianxi a, #lianxi img{
+    width: 352px;
+    height: 230px;
+    display: inline-block;
+}
+
+/*子公司部分*/
+aside{
+    margin-bottom: 10px;
+}
+section#zigongsi{
+    margin-top: 17px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+section#zigongsi li{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-top: 10px;
+}
+#zigongsi li h4{
+    font-size: 16px;
+    text-indent: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+#zigongsi li h4 a{
+    text-decoration: none;
+    color: #717171;
+}
+#zigongsi li:hover{
+    border: solid 1px #3598db;
+    padding: 10px 0;
+    text-shadow: 1px 2px 4px #000;
+    -webkit-transition: padding 0.5s linear;
+    -moz-transition: padding 0.5s linear;
+    -o-transition: padding 0.5s linear;
+    transition: padding 0.5s linear;
+}
+.zgsjj a{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #717171;
+}
+.zgsjj a:first-child, .zgsjj a img{
+    width: 170px;
+    height: 50px;
+}
+.zgsjj a:last-child{
+    font-size: 12px;
+    width: 175px;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* ------------------- footer的样式 （以下为）------------------ */
+
+#footer_wrapper{
+    background-color: #3598db;
+    margin-top: 20px;
+    height: 100px;
+    clear: both;
+
+}
+footer div{
+    text-align: center;
+    padding-top: 20px;
+}
+footer div li{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: solid 1px white;
+}
+footer div li:last-child{
+    border: none;
+}
+footer div li a{
+    text-decoration: none;
+    color: white;
+}
+footer div p{
+    color: white;margin-top: 5px;
+}
